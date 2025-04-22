@@ -93,7 +93,7 @@ Fitur Tambahan:
 ![Kelompok_Mobile 1](https://github.com/user-attachments/assets/38cba1be-c452-4080-9165-146621f2eeb8)  
 
 ## Mockup
-
+![Kelompok Mobile (1) 1](https://github.com/user-attachments/assets/438703e1-cd40-4bbc-b97b-ed86ef5a9ba8)
 
 # Trello  
 #### Ainun Dwi Permana https://trello.com/b/iEpLAWDm/projek-mobile-2   
