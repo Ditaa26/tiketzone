@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="171dp"
+        android:layout_height="174dp"
+        android:src="@drawable/icons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159"
+        android:contentDescription="TODO" />
+
+
+    <TextView
+        android:id="@+id/app_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo1"
+        android:layout_centerHorizontal="true"
+        android:text="Hallo!Selamat Datang"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <LinearLayout
+        android:id="@+id/namaLayout"
+        android:layout_width="324dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="332dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNama2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#89CFF0"
+            android:hint="Masukan Nama"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout2"
+        android:layout_width="337dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#89CFF0"
+            android:hint="Masukan Email"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout2"
+        android:layout_width="337dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#89CFF0"
+            android:hint="Masukan Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#B4E3FF"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
