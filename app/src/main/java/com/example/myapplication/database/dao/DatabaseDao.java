@@ -3,9 +3,9 @@ package com.example.myapplication.database.dao;
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
-import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
-
+import androidx.room.Update;
+import androidx.room.OnConflictStrategy;
 import com.example.myapplication.model.ModelDatabase;
 
 import java.util.List;
@@ -21,4 +21,14 @@ public interface DatabaseDao {
 
     @Query("DELETE FROM tbl_travel WHERE uid = :uid")
     void deleteDataById(int uid);
+
+    @Query("SELECT * FROM tbl_travel WHERE email = :email")  // Pastikan nama tabel benar
+    ModelDatabase getUserByEmail(String email);
+
+    @Query("SELECT * FROM tbl_travel WHERE nama_pengguna = :namaPengguna ORDER BY uid DESC")
+    LiveData<List<ModelDatabase>> getHistoryByUsername(String namaPengguna);
+
+    @Update
+    void updateData(ModelDatabase user);
+
 }
