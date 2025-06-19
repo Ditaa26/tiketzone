@@ -47,6 +47,8 @@
         <activity
             android:name=".view.main.loginn"
             android:exported="true" />
+         <activity android:name=".view.main.duaa"
+            android:exported="true"/>
         <activity
             android:name=".view.main.SplashScreen"
             android:exported="true" />
