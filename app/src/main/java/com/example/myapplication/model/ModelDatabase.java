@@ -43,6 +43,15 @@ public class ModelDatabase implements Serializable {
     @ColumnInfo(name = "status")
     private String status;
 
+    @ColumnInfo(name = "nama_pengguna")  // Ganti dari "nama_penumpang"
+    private String namaPengguna;  // Ubah variabel
+
+    @ColumnInfo(name = "email")
+    private String email;
+
+    @ColumnInfo(name = "password")
+    private String password;
+
     // Getters and Setters for all fields
     public int getUid() {
         return uid;
@@ -59,7 +68,6 @@ public class ModelDatabase implements Serializable {
     public void setNamaPenumpang(String namaPenumpang) {
         this.namaPenumpang = namaPenumpang;
     }
-
     public String getKeberangkatan() {
         return keberangkatan;
     }
@@ -131,4 +139,29 @@ public class ModelDatabase implements Serializable {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getNamaPengguna() {
+        return namaPengguna;
+    }
+
+    public void setNamaPengguna(String namaPengguna) {
+        this.namaPengguna = namaPengguna;
+    }
+
 }
